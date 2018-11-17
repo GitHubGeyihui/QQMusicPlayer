@@ -1,0 +1,23 @@
+<view id='viewSearch'>
+  <view id='icon'></view>
+  <!-- bindinput：输入框value发生变化即触发函数 -->
+  <input id='inputSearch' type="text" placeholder-class="placeholder" 
+  placeholder='搜索歌曲、歌单、专辑' bindfocus='funFocus'  bindinput='search'></input>
+</view>
+<view wx:if='{{!bGetFocus}}' id='viewHotSearch'>
+  <view>Gai见面吧电台</view>
+  <view>MOVE YOUR BODY </view>
+  <view>红尘来去一场梦 </view>
+  <view>爱情有时很残忍 </view>
+    <view>不能说的秘密 </view>
+      <view>IZONE </view>
+</view>
+<view wx:else="{{!bGetFocus}}" id='btnCancel' bindtap='funCancel'>取消</view>
+
+<view class='Name'>{{item.artists[0].name}}</view>
+<view id='Song' wx:if="{{bGetFocus}}" wx:for="{{songList}}" bindtap='SongView' data-id='{{item.id}}'
+   data-name='{{item.name}}'  data-artistsname='{{item.artists[0].name}}'>
+  <image src='{{item.artists[0].img1v1Url}}'/>
+  <view class='SongName' >{{item.name}}</view>
+  <view class='Name'>{{item.artists[0].name}}</view>
+</view>

@@ -1,0 +1,39 @@
+<!--pages/logs/logs.wxml-->
+<view class='html'>
+  <view class='head'>
+    <view class='head-top'>
+      <view>
+        <image src='{{Searchsonginfo.img1v1url}}' class='head-image'></image>
+      </view>
+      <view class='head-txt'>
+        <view class='txt-title'>{{Searchsonginfo.name}}
+        </view>
+        <view class='txt-body'>
+          <text>{{Searchsonginfo.artistsname}}</text>
+        </view>
+      </view>
+    </view>
+    <view>{{title}}</view>
+    <view bindtap='playMusic'>
+    <image class='playImg' src='/images/open.png' wx:if="{{flag}}"></image>
+    <image class='playImg' src='/images/close.png' wx:else></image>
+    </view> 
+    <!-- <view class=''>
+      <button class='head-btn'>播放全部</button>
+    </view> -->
+  </view>
+  <view class='body'>
+    <view class='body-title'>
+      <text class='body-title-left'>歌单 共6首</text>
+      <text class='body-title-right-1'>收藏</text>
+      <text class='body-title-right-2'>♡</text>
+    </view>
+    <view class='body-list'>
+
+      <view class='list-music' wx:for="{{infoList.list}}">
+        <view class='music-name'>{{item.name}}</view>
+        <view class='music-info'>{{item.src}}</view>
+      </view>
+    </view>
+  </view>
+</view>

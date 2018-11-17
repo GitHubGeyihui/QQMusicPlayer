@@ -1,0 +1,18 @@
+<swiper autoplay='true' interval='2000' circular='false' indicator-dots='true' indicator-color='#fff' indicator-active-color='red'>
+  <swiper-item wx:for='{{imgs}}' wx:key>
+    <image class='imgLunbo' src='{{item}}'></image>
+  </swiper-item>
+</swiper>
+
+<view class='title2'>热门歌单</view>
+
+<view class='songList2'>
+  <view wx:for='{{HomeList}}' wx:key id='songList3' data-id='{{item.id}}'  bindtap="Goto_sheet" >
+    <!-- <navigator url='/pages/mag/mag?src={{item.src}}&name={{item.name}}&id={{item.id}}' open-type='navigate'>
+      <image src='{{item.src}}' class='songBlock'></image>
+    </navigator> -->
+    <image src='{{item.picUrl}}' class='songBlock' ></image>
+    <view class='songName'>{{item.name}}</view>
+    <image src='/images/list_sprite.png' class='listen' mode='top'></image>
+  </view>
+</view>

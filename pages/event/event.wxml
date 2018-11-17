@@ -1,0 +1,11 @@
+<view id='box'>
+  <view style='background:#fff' class='li' wx:for='{{EvenList}}' data-id='{{item.id}}' bindtap='Goto'>
+    <image src='{{item.coverImgUrl}}' class='img'></image>
+    <view class='text'>
+      <view class='title'>{{item.name}}</view>
+      <view class='item' wx:for-item='songItem' wx:for-index='ind' wx:for='{{item.tracks}}' >
+         {{ind+1}}.{{songItem.first}}-<text> {{songItem.second}}</text>
+      </view>
+    </view>
+  </view>
+</view>

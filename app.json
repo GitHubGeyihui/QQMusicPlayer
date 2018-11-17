@@ -1,0 +1,41 @@
+{
+  "pages": [
+    
+    "pages/home/home",
+    "pages/pages/index",
+    "pages/event/event",
+    "pages/mag/mag",
+    "pages/welcome/welcome",
+    "pages/change/change",
+    "pages/Details/Details",
+    "pages/songSheet/songSheet"
+
+  
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2E8B57",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "QQ音乐",
+    "backgroundColor": "#2E8B57",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/event/event",
+        "text": "排行榜"
+      },
+      {
+        "pagePath": "pages/welcome/welcome",
+        "text": "搜索"
+      }
+    ]
+  }
+}

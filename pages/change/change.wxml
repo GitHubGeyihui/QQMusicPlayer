@@ -1,0 +1,29 @@
+
+<view class='one' 
+hover-class='active' 
+hover-start-time='100' 
+hover-stay-time='500'
+bindtap='changeColor'>
+<!-- hover-class='增加的class的名称'点击元素后一瞬间显示
+hover-start-time='毫秒值'作用于延迟显示
+hover-stay-time='毫秒值'增加元素样式停留时间 -->
+我是一个方块
+</view>
+
+<!-- 上下滑动 -->
+<scroll-view class='wrap'scroll-y='true' 
+scroll-into-view='{{selectColor}}'
+scroll-with-animation='true'>
+<view class='red'id='red'>红色</view>
+<view class='yellow'id='yellow'>黄色</view>
+<view class='green'id='green'>绿色</view>
+<view class='pink'id='pink'>粉色</view>
+<view class='blue'id='blue'>蓝色</view>
+</scroll-view>
+<!-- 左右滑动 -->
+
+<scroll-view class='wrap1'scroll-x='true' >
+<view class='red' id='red1'></view>
+<view class='yellow' id='yellow1'></view>
+<view class='green' id='green1'></view>
+</scroll-view>

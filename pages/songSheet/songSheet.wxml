@@ -1,0 +1,10 @@
+<!-- {{songList}} -->
+<view id='songSheetHeader'>
+  <image class='headerImg' src='{{songSheetInfo.coverImgUrl}}'></image>
+  <view class='titleName'>{{songSheetInfo.name}}</view>
+  <!-- <view class='description'>{{songSheetInfo.description}}</view> -->
+</view>
+<view  id='songList' wx:for='{{songList}}' data-id='{{item.id}}' data-name='{{item.name}}' data-artistsName='{{item.ar[0].name}}' bindtap='fun_searchDetailsPage'>
+  <view id='songName'>{{index+1}}.  {{item.name}}</view> 
+  <view id='artistName'>{{item.ar[0].name}}</view>
+</view>

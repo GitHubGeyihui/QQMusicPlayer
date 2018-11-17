@@ -1,0 +1,54 @@
+/* pages/change/change.wxss */
+.one{
+width: 300rpx;
+height: 300rpx;
+background-color: red;
+font-size: 40rpx;
+}
+.active{
+  background-color: rgb(31, 201, 31);
+}
+.wrap
+{
+ width: 400rpx;
+height: 400rpx;
+border: 1rpx solid black;
+}
+.red
+{
+  height: 400rpx;
+  background-color: red;
+}
+.yellow
+{
+  height: 400rpx;
+  background-color: yellow;
+}
+.green
+{
+  height: 400rpx;
+  background-color: green;
+}
+.pink
+{
+  height: 400rpx;
+  background-color: pink;
+}
+.blue
+{
+  height: 400rpx;
+  background-color:  paleturquoise;
+}
+.wrap1
+{
+  width: 400rpx;
+  height: 400rpx;
+  display: flex;
+  white-space: nowrap;  /* 不折行 */
+}
+.wrap1 view
+{
+  width: 400rpx;
+  height: 400rpx;
+  display: inline-block;
+}

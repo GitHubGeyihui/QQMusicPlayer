@@ -1,0 +1,5 @@
+<!--pages/pages/index.wxml-->
+<view class='container'>
+<image bindtap='goto' src='/images/122.jpg' class='header'></image>
+<text class='title'>谷羽の浅樱</text>
+</view>

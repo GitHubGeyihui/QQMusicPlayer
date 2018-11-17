@@ -1,0 +1,93 @@
+.html{
+  width: 100%;
+  height: auto;
+  border: 0rpx solid #f00;
+}
+.head{
+  width: 94%;
+  height: 400rpx;
+  border: 0rpx solid #300;
+  padding: 4%;
+  background-color: #999;
+}
+.logo{  
+  display: flex;justify-content: center;
+  background-color: #eee;
+}
+.head-top{
+  display: flex;
+  }
+.head-btn{
+  width: 400rpx;
+  border-radius: 80rpx;
+  background-color:#1eee9e;
+  color: #fff;
+}
+.head-image{
+  width:250rpx;
+  height: 250rpx;
+}
+.head-gif{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.head-txt{
+  margin: 20rpx;
+}
+.txt-title{
+  color: #fff;
+  font-size: large;
+}
+.txt-body{
+  color: #fff;
+  margin-top: 20rpx;
+  font-size: small;
+}
+.body{
+  width: 100%;
+  height: auto;
+  border: 0rpx solid #ff0;
+}
+.body-title{
+  margin: 40rpx;
+}
+.body-title-left{
+  color: #aaa;
+  font-size: small;
+}
+.body-title-right-1{
+  color: green;  
+  position: absolute;
+  font-size: small;
+  right: 85rpx;
+}
+.body-title-right-2{
+  color: green;  
+  position: absolute;
+  font-size: x-large;
+  right: 40rpx;
+  top:486rpx;
+}
+.body-list{
+  width: 94%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.list-music{
+  padding-bottom: 4%;
+}
+.music-name{
+  color: #000;
+}
+.music-info{
+  color: #999;
+  font-size: small;
+  padding-top: 10rpx;
+}
+.playImg{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: -10rpx;
+  border: 1px solid red;
+}

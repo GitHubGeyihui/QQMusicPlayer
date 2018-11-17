@@ -1,0 +1,35 @@
+#songList{
+  width: 600rpx;
+  height: 100rpx;
+  background: white;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+  padding-left:30rpx; 
+}
+#songName{
+  font-size: 35rpx;
+  white-space:nowrap;
+}
+#artistName{
+  font-size: 30rpx;
+  color: #aaa;
+}
+/* 歌单头 */
+#songSheetHeader{
+  width: 100vw;
+  position: relative;
+  background: rgba(0,0,0,1);
+}
+.headerImg{
+   filter: blur(7px) grayscale(40%);
+   width: 100vw;
+   height: 400rpx;
+}
+.titleName{
+  position: absolute;
+  top: 150rpx;
+  width: 750rpx;
+  color: black;
+  font-size: 45rpx;
+  text-align: center;
+}

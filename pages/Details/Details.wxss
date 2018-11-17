@@ -1,0 +1,70 @@
+
+.songDetails{
+  position: relative;
+  background: #000;
+  color: white;
+  text-align: center;
+  white-space:nowrap;
+  width: 100vw;
+  height: 100vh;
+}
+.songName,.songerName{
+    position: relative;
+    top: 50rpx;
+}
+.songerName{
+  font-size:30rpx; 
+  color: #eee;
+}
+.songDetailsPic{
+  width: 500rpx;
+  height: 500rpx;
+  border-radius:50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -250rpx;
+  margin-top: -250rpx;
+}
+.songrImgAnimation{
+  animation:animationPic 8s linear infinite; 
+}
+.player{
+  z-index: 99;
+  width: 100rpx;
+  height:100rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50rpx;
+  margin-top: -50rpx;
+  color:white;
+}
+@keyframes animationPic{
+  0%{ transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+#lyricBox{
+  border: 1px solid red;
+  width: 80vw;
+  height: 650rpx;
+  margin: 0 auto;
+  position: absolute;
+  top: 500rpx;
+  left: 50%;
+  margin-left: -40vw;
+  white-space:normal;
+  overflow: hidden;
+}
+#lyricBox view{
+  margin: 20rpx;
+  color: white;
+  font-size: 30rpx;
+}
+#slider{
+  position: absolute;
+  bottom: 20rpx;
+  width: 80vw;
+  left: 50%;
+  margin-left: -40vw;
+}

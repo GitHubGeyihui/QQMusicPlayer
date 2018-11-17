@@ -1,0 +1,16 @@
+<!-- <image src='{{info.src}}'></image> -->
+<view class='songDetails'>
+  <view class='songName'>{{info.name}}</view>
+  <view class='songerName'>{{info.artistsname}}</view>
+   <image  wx:if='{{flag}}' class='songDetailsPic' src='{{picUrl}}'></image>
+  <image wx:else='{{flag}}' class='songDetailsPic songrImgAnimation' src='{{picUrl}}'></image>
+  <view bindtap='playSome' data-id='{{info.id}}'>
+    <image wx:if='{{flag}}' class='player' src='/images/open.png'></image>
+    <image wx:else='{{flag}}' class='player' src='/images/close.png'></image>
+  </view>
+    <!-- 播放进度 -->
+  <slider bindchange="slider4change" min="0" max="100" show-value block-size='20' id='slider' bindchange='fun_slider' value='{{sliderValue}}' bindchanging='fun_slidering'/>
+</view>
+
+
+
